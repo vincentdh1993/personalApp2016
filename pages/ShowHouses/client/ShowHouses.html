@@ -1,6 +1,8 @@
 <template name="houses">
-	<div class = "jumbotron">
+	<div style="text-align:center">
+	<div style ="background:lightskyblue" class = "jumbotron">
 	<h1> Available Houses</h1>
+	</div>
 	</div>
 
 	Desired price: <input type="text" class="js-desired">
@@ -9,13 +11,16 @@
 
 
 	<h3>Post a new House</h3>
-	Name:<input type="text" class = "js-name">
+	Name:<input type="text" class = "js-offeredBy">
 	<br>
 	<br>
 	Address: <input type="text" class = "js-address">
 	<br>
 	<br>
 	City: <input type="text" class = "js-city">
+	<br>
+	<br>
+	Deposit: <input type="number" class = "js-deposit">
 	<br>
 	<br>
 	Price: <input type="number" class = "js-price">
@@ -39,7 +44,7 @@
 	<input type ="checkbox" class="js-nov">November<br>
 	<input type ="checkbox" class="js-dec">December<br>
 
-	<button class="js-addHouse">Post your House</button>
+	<button style="background:lightskyblue" class="js-addHouse">Post your House</button>
 
 
 
@@ -50,6 +55,5 @@
 		<li>{{h.address}} is available with price of {{h.price}}$ </li>
 		{{/each}}
 	</ul>
-
 
 </template>

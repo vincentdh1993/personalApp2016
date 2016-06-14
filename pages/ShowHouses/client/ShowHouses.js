@@ -10,7 +10,7 @@ Template.houses.helpers({
 Template.houses.events({
 	"click .js-addHouse": function(event){
 		console.log("Clicked");
-		const name = $(".js-name").val();
+		const offeredBy = $(".js-name").val();
 		const address = $(".js-address").val();
 		const city = $(".js-city").val();
 		const state = $(".js-state").val();
@@ -30,7 +30,7 @@ Template.houses.events({
 
 		const house = 
 		//{name:name, city:city, state:state,months:[jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec]};
-		{name:name, city:city, state:state,months:[jun,jul,aug], price:price, address:address};
+		{offeredBy:offeredBy, city:city, state:state,months:[jun,jul,aug], price:price, address:address};
 		console.dir(house);
 		HouseDatas.insert(house);
 	}
